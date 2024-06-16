@@ -38,4 +38,12 @@ public class Projectile_2 : MonoBehaviour
             collision.gameObject.GetComponent<Projectile_4>().Boom();
         }
     }
+
+    private void FixedUpdate()
+    {
+        if (!LevelManager.instantiate.game)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

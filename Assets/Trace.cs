@@ -13,4 +13,11 @@ public class Trace : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+    private void FixedUpdate()
+    {
+        if (!LevelManager.instantiate.game)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

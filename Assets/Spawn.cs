@@ -7,10 +7,19 @@ public class Spawn : MonoBehaviour
 	[SerializeField] private GameObject[] bulletPrefab;
 	[SerializeField] private Transform point2;
     [SerializeField] private float speed;
+    private bool a = false;
 
-    private void Start()
+    private void FixedUpdate()
     {
-        Invoke("SpawnAst", 1);
+        if (LevelManager.instantiate.game && !a)
+        {
+            a = true;
+            Invoke("SpawnAst", speed);
+        }
+        if (!LevelManager.instantiate.game && a)
+        {
+            Destroy(this);
+        }
     }
 
 

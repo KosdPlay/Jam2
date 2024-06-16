@@ -13,9 +13,12 @@ public class Laser : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time - lastAttackTime >= attackCooldown)
+        if (LevelManager.instantiate.game)
         {
-            StartCoroutine(SpawnAst());
+            if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))&& Time.time - lastAttackTime >= attackCooldown)
+            {
+                StartCoroutine(SpawnAst());
+            }
         }
     }
 
@@ -25,5 +28,6 @@ public class Laser : MonoBehaviour
         Instantiate(bulletPrefab, point2.position, point2.rotation);
         yield return new WaitForSeconds(0);
         lastAttackTime = Time.time;
+
     }
 }

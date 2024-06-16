@@ -8,13 +8,16 @@ public class RocketMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (LevelManager.instantiate.game)
         {
-            rocket.transform.position = Vector2.MoveTowards(transform.position, new Vector3(rocket.transform.position.x + 0.1f, rocket.transform.position.y, rocket.transform.position.z), 10 * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            rocket.transform.position = Vector2.MoveTowards(transform.position, new Vector3(rocket.transform.position.x - 0.1f, rocket.transform.position.y, rocket.transform.position.z), 10 * Time.deltaTime);
+            if (Input.GetKey(KeyCode.D))
+            {
+                rocket.transform.position = Vector2.MoveTowards(transform.position, new Vector3(rocket.transform.position.x + 0.1f, rocket.transform.position.y, rocket.transform.position.z), 10 * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                rocket.transform.position = Vector2.MoveTowards(transform.position, new Vector3(rocket.transform.position.x - 0.1f, rocket.transform.position.y, rocket.transform.position.z), 10 * Time.deltaTime);
+            }
         }
         //if (Input.GetKey(KeyCode.W))
         //{
@@ -25,4 +28,5 @@ public class RocketMove : MonoBehaviour
         //   rocket.transform.position = Vector2.MoveTowards(transform.position, new Vector3(rocket.transform.position.x, rocket.transform.position.y - 0.1f, rocket.transform.position.z), 10 * Time.deltaTime);
         //}
     }
+
 }

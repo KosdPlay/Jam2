@@ -25,23 +25,33 @@ public class MoveHelicopter : MonoBehaviour
     [SerializeField] private float speedA;
     [SerializeField] private float speedB;
 
+    [SerializeField] private Transform point;
+
+    private bool a = false;
+
     [SerializeField] private Animator animator;
 
     private void Start()
     {
         isUp = true;
         isDown = false;
-        Invoke("Spawn", speedA);
-        Invoke("SpawnB", speedB);
         canMove = true;
         instantiate = this;
+        hp = maxhp;
     }
 
     private void FixedUpdate()
     {
-        //hp += Time.deltaTime;
         progressBar.fillAmount = hp / maxhp;
-        if (hp <= maxhp/2)
+        if (LevelManager.instantiate.game && !a)
+        {
+            a = true;
+            Invoke("Spawn", speedA);
+            Invoke("SpawnB", speedB);
+            //hp += Time.deltaTime;
+
+        }
+        if (hp <= maxhp / 2)
         {
             secondStage = true;
         }
@@ -81,16 +91,14 @@ public class MoveHelicopter : MonoBehaviour
     private IEnumerator SpawnA()
     {
 
-        Instantiate(bulletPrefab, point1.position, new Quaternion(0, 0, 0, 0));
-        Instantiate(bulletPrefab, point2.position, new Quaternion(0, 0, 0, 0));
-
-        Instantiate(bulletPrefab, point1.position + new Vector3(0, 0.5f, 0), new Quaternion(0, 0, 0, 0));
-        Instantiate(bulletPrefab, point2.position + new Vector3(0, 0.5f, 0), new Quaternion(0, 0, 0, 0));
-
-        Instantiate(bulletPrefab, point1.position + new Vector3(0, 1f, 0), new Quaternion(0, 0, 0, 0));
-        Instantiate(bulletPrefab, point2.position + new Vector3(0, 1f, 0), new Quaternion(0, 0, 0, 0));
-
-        yield return new WaitForSeconds(0f);
+        Instantiate(bulletPrefab, point1.position + new Vector3(1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
+        Instantiate(bulletPrefab, point2.position + new Vector3(-1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
+        yield return new WaitForSeconds(0.2f);
+        Instantiate(bulletPrefab, point1.position + new Vector3(1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
+        Instantiate(bulletPrefab, point2.position + new Vector3(-1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
+        yield return new WaitForSeconds(0.2f);
+        Instantiate(bulletPrefab, point1.position + new Vector3(1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
+        Instantiate(bulletPrefab, point2.position + new Vector3(-1, 0.2f, 0), new Quaternion(0, 0, 0, 0));
     }
 
     private void SpawnB()
@@ -140,7 +148,7 @@ public class MoveHelicopter : MonoBehaviour
 
     public void TakeDamage(int i)
     {
-        if (hp - i < 0)
+        if (hp - i <= 0)
         {
             hp = 0;
             Death();
@@ -160,7 +168,24 @@ public class MoveHelicopter : MonoBehaviour
 
     private void Death()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("0");
+        LevelManager.instantiate.game = false;
+        canMove = false;
+        StartCoroutine(MoveToSpawn());
     }
 
+
+    private IEnumerator MoveToSpawn()
+    {
+        while (Vector2.Distance(transform.position, point.position) > 0.8f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, point.position + new Vector3(0, 0, 0), 2 * Time.deltaTime);
+            yield return null;
+        }
+        if (Vector2.Distance(transform.position, point.position) <= 0.8f)
+        {
+            CutsceneManager.Instance.StartCutscene("CS_1"); StopCoroutine(MoveToSpawn());
+            Destroy(this.gameObject, 4);
+        }
+    }
 }

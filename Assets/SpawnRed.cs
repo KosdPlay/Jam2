@@ -8,9 +8,19 @@ public class SpawnRed : MonoBehaviour
     [SerializeField] private Transform point2;
     [SerializeField] private float speed;
 
-    private void Start()
+    private bool a = false;
+
+    private void FixedUpdate()
     {
-        Invoke("SpawnAst", speed);
+        if (LevelManager.instantiate.game && !a)
+        {
+            a = true;
+            Invoke("SpawnAst", speed);
+        }
+        if (!LevelManager.instantiate.game && a)
+        {
+            Destroy(this);
+        }
     }
 
 
