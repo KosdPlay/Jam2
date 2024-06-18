@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,36 +11,64 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private GameObject player;
 
+
+    [SerializeField] private string name;
+
     public bool game;
     private bool a;
 
-    private void Start()
+    private void Awake()
     {
         instantiate = this;
         game = false;
     }
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (FlightProgress.instantiate.mod)
+        {
+            Dialogue.instantiate.StartDial(1);
+        }
+        else
         {
             game = true;
         }
+    }
+
+    private void Update()
+    {
         if (game && !a)
         {
             a = true;
         }
-        if (a && !game)
+        if (a && !game && FlightProgress.instantiate.mod)
         {
             a = false;
             StartCoroutine(MoveToSpawn());
             Invoke("D", 5f);
+        }
+        if (FlightProgress.instantiate.progress >= 100 && game && !FlightProgress.instantiate.mod)
+        {
+            game = false;
+            D();
         }
     }
 
     private void D()
     {
         CutsceneManager.Instance.StartCutscene("CS_End_Space");
+        Invoke("Next", 4);
+
+    }
+
+    private void Next()
+    {
+        SceneManager.LoadScene(name);
+    }
+
+    public void start()
+    {
+        game = true;
     }
 
     private IEnumerator MoveToSpawn()

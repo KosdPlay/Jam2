@@ -6,6 +6,9 @@ public class Fuel : MonoBehaviour
 {
     [SerializeField] private GameObject hint;
 
+    [SerializeField] private AudioClip clip;
+    [SerializeField] private AudioSource audioSource;
+
     private void Start()
     {
         hint.SetActive(false);
@@ -18,7 +21,8 @@ public class Fuel : MonoBehaviour
             hint.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
-                FuelStorage.instantiate.AddCountFuel(1);
+                audioSource.PlayOneShot(clip);
+                FuelStorage.instantiate.AddItem(1);
                 Destroy(this.gameObject);
             }
         }

@@ -1,0 +1,1127 @@
+fileFormatVersion: 2
+guid: 27c57e36feff61e4bb3740708ec5589e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8911599306123498330
+    second: authum4_0
+  - first:
+      213: 9003872181780535491
+    second: authum4_1
+  - first:
+      213: 3947936451387636371
+    second: authum4_2
+  - first:
+      213: -1746059054570007452
+    second: authum4_3
+  - first:
+      213: 7482550370826460062
+    second: authum4_4
+  - first:
+      213: -4093012590291034040
+    second: authum4_5
+  - first:
+      213: 1684756152423745220
+    second: authum4_6
+  - first:
+      213: 6657294985443225591
+    second: authum4_7
+  - first:
+      213: -4515920893408493995
+    second: authum4_8
+  - first:
+      213: -1705800855544070849
+    second: authum4_9
+  - first:
+      213: 8533983997526278154
+    second: authum4_10
+  - first:
+      213: 6849829389547735292
+    second: authum4_11
+  - first:
+      213: 3385574388511106702
+    second: authum4_12
+  - first:
+      213: -3775529967856127375
+    second: authum4_13
+  - first:
+      213: -6656563566596207580
+    second: authum4_14
+  - first:
+      213: -8570899860595054596
+    second: authum4_15
+  - first:
+      213: 7370051234692831059
+    second: authum4_16
+  - first:
+      213: 6350663242175583683
+    second: authum4_17
+  - first:
+      213: -3354806559705971895
+    second: authum4_18
+  - first:
+      213: 33569489509954912
+    second: authum4_19
+  - first:
+      213: -889095134282809636
+    second: authum4_20
+  - first:
+      213: -2864469414516291370
+    second: authum4_21
+  - first:
+      213: -2919759101512126933
+    second: authum4_22
+  - first:
+      213: -5978095345341236425
+    second: authum4_23
+  - first:
+      213: -8722062246027205030
+    second: authum4_24
+  - first:
+      213: -239374579630905404
+    second: authum4_25
+  - first:
+      213: -6720255828545346105
+    second: authum4_26
+  - first:
+      213: -4564113311555147500
+    second: authum4_27
+  - first:
+      213: -868650367898870502
+    second: authum4_28
+  - first:
+      213: 5593868316587171429
+    second: authum4_29
+  - first:
+      213: 4124284473728183490
+    second: authum4_30
+  - first:
+      213: 5473716108898984490
+    second: authum4_31
+  - first:
+      213: -6293320350629893097
+    second: authum4_32
+  - first:
+      213: 2876108341250728274
+    second: authum4_33
+  - first:
+      213: -4489110316542445945
+    second: authum4_34
+  - first:
+      213: 1683202929375924603
+    second: authum4_35
+  - first:
+      213: 4892313646497366469
+    second: authum4_36
+  - first:
+      213: -2017623460508898899
+    second: authum4_37
+  - first:
+      213: 6965783809953497340
+    second: authum4_38
+  - first:
+      213: -392367789014336879
+    second: authum4_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: authum4_0
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1324
+        width: 1295
+        height: 1315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac24e195a3a35480800000000000000
+      internalID: -8911599306123498330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_1
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 2627
+        width: 113
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8dc067b0e24fc70800000000000000
+      internalID: 9003872181780535491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_2
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 2633
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ab6c41943e9c630800000000000000
+      internalID: 3947936451387636371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_3
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 2631
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46410877a80c4c7e0800000000000000
+      internalID: -1746059054570007452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_4
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 2634
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b14130beb57d760800000000000000
+      internalID: 7482550370826460062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_5
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2623
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840608e1cb2b237c0800000000000000
+      internalID: -4093012590291034040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_6
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 2619
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c60f5e5bc4716710800000000000000
+      internalID: 1684756152423745220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_7
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 2624
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff25547486736c50800000000000000
+      internalID: 6657294985443225591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_8
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 2623
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e3f92bfd93451c0800000000000000
+      internalID: -4515920893408493995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_9
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 2624
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dfcbbd827c358e0800000000000000
+      internalID: -1705800855544070849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_10
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 2626
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a000c631b3dce6670800000000000000
+      internalID: 8533983997526278154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_11
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 2050
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf80600b98b7f0f50800000000000000
+      internalID: 6849829389547735292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_12
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 2048
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e866dd308f9fbfe20800000000000000
+      internalID: 3385574388511106702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_13
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 2038
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172f7137f7f9a9bc0800000000000000
+      internalID: -3775529967856127375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_14
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 2030
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cc93444b22f93a0800000000000000
+      internalID: -6656563566596207580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_15
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 2028
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf769c3ccfb0e0980800000000000000
+      internalID: -8570899860595054596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_16
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 2028
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3579b4cbc8ea74660800000000000000
+      internalID: 7370051234692831059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_17
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 2008
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5910e4296122850800000000000000
+      internalID: 6350663242175583683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_18
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 2006
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943439e55355171d0800000000000000
+      internalID: -3354806559705971895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_19
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 2002
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0653889d543477000800000000000000
+      internalID: 33569489509954912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_20
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 1993
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde7b8d9fac49a3f0800000000000000
+      internalID: -889095134282809636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_21
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1983
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d809cd7e3c5f38d0800000000000000
+      internalID: -2864469414516291370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_22
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 1972
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ee7a4119eea77d0800000000000000
+      internalID: -2919759101512126933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_23
+      rect:
+        serializedVersion: 2
+        x: 2753
+        y: 1975
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bf48be4f9890da0800000000000000
+      internalID: -5978095345341236425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_24
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1966
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56e3b4499205f680800000000000000
+      internalID: -8722062246027205030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_25
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 1960
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c767dc86129dacf0800000000000000
+      internalID: -239374579630905404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_26
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 1941
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c56ecbedeadcb2a0800000000000000
+      internalID: -6720255828545346105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_27
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 1950
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419af16ff1309a0c0800000000000000
+      internalID: -4564113311555147500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_28
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 1933
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d106bb71fe1f3f0800000000000000
+      internalID: -868650367898870502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_29
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 1924
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e9d7aa89961ad40800000000000000
+      internalID: 5593868316587171429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_30
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1909
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc2a31a0e66c3930800000000000000
+      internalID: 4124284473728183490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_31
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1356
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22e140dccb86fb40800000000000000
+      internalID: 5473716108898984490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_32
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 1358
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ce7fa0c72a9a8a0800000000000000
+      internalID: -6293320350629893097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_33
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1354
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251a9cf4c4df9e720800000000000000
+      internalID: 2876108341250728274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_34
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 1357
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78632f093f973b1c0800000000000000
+      internalID: -4489110316542445945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_35
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1355
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7159527520fb5710800000000000000
+      internalID: 1683202929375924603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_36
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1342
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c18545475df4e340800000000000000
+      internalID: 4892313646497366469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_37
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 1346
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da96fd90726fff3e0800000000000000
+      internalID: -2017623460508898899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_38
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 1357
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf00276087f6ba060800000000000000
+      internalID: 6965783809953497340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: authum4_39
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1347
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19abe7223970e8af0800000000000000
+      internalID: -392367789014336879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      authum4_0: -8911599306123498330
+      authum4_1: 9003872181780535491
+      authum4_10: 8533983997526278154
+      authum4_11: 6849829389547735292
+      authum4_12: 3385574388511106702
+      authum4_13: -3775529967856127375
+      authum4_14: -6656563566596207580
+      authum4_15: -8570899860595054596
+      authum4_16: 7370051234692831059
+      authum4_17: 6350663242175583683
+      authum4_18: -3354806559705971895
+      authum4_19: 33569489509954912
+      authum4_2: 3947936451387636371
+      authum4_20: -889095134282809636
+      authum4_21: -2864469414516291370
+      authum4_22: -2919759101512126933
+      authum4_23: -5978095345341236425
+      authum4_24: -8722062246027205030
+      authum4_25: -239374579630905404
+      authum4_26: -6720255828545346105
+      authum4_27: -4564113311555147500
+      authum4_28: -868650367898870502
+      authum4_29: 5593868316587171429
+      authum4_3: -1746059054570007452
+      authum4_30: 4124284473728183490
+      authum4_31: 5473716108898984490
+      authum4_32: -6293320350629893097
+      authum4_33: 2876108341250728274
+      authum4_34: -4489110316542445945
+      authum4_35: 1683202929375924603
+      authum4_36: 4892313646497366469
+      authum4_37: -2017623460508898899
+      authum4_38: 6965783809953497340
+      authum4_39: -392367789014336879
+      authum4_4: 7482550370826460062
+      authum4_5: -4093012590291034040
+      authum4_6: 1684756152423745220
+      authum4_7: 6657294985443225591
+      authum4_8: -4515920893408493995
+      authum4_9: -1705800855544070849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

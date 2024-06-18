@@ -1,21 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class FuelStorage : MonoBehaviour
 {
-    [SerializeField] private int countFuel;
+    public int item;
+    public int countFuel;
     public static FuelStorage instantiate;
+    public int maxFuel;
+    [SerializeField] private Image FuelBar;
 
     private void Start()
     {
-        DontDestroyOnLoad(this);
         instantiate = this;
     }
 
-    public void AddCountFuel(int i)
+    public void AddItem(int i)
     {
-        countFuel += i;
+        item += i;
+    }
+
+    public void Recycling()
+    {
+        countFuel += item;
+        item = 0;
+        Debug.Log(countFuel / maxFuel);
+        FuelBar.fillAmount = (float)countFuel / (float)maxFuel;
+    }
+
+    public int GetItem()
+    {
+        return item;
     }
 
     public int GetCountFuel()

@@ -5,13 +5,14 @@ using TMPro;
 
 public class DialogSystem : MonoBehaviour
 {
+    public bool planet;
     [SerializeField] private GameObject hint;
 
     [SerializeField] private TMP_Text ded;
 
     [SerializeField] private List<GameObject> allStory;
 
-    [SerializeField] private bool a = false;
+    public bool a = false;
 
     private int i;
 
@@ -26,8 +27,11 @@ public class DialogSystem : MonoBehaviour
 
     [SerializeField] private Animator playerAnim;
     [SerializeField] private Animator DedAnim;
-    [SerializeField] private int playerState;
-    [SerializeField] private int DedState;
+
+    private void Awake()
+    {
+        instantiate = this;
+    }
 
     private void Start()
     {
@@ -37,7 +41,20 @@ public class DialogSystem : MonoBehaviour
         canMove = true;
         ClearPanel();
         a = false;
+        DedAnim.SetInteger("State", 0);
+        canMove = false;
+        if (planet)
+        {
+            CutsceneManager.Instance.StartCutscene("CS_1");
+            Invoke("B", 8);
+        }
     }
+
+    private void B() 
+    {
+        Dialogue.instantiate.StartDial(1);
+    }
+
 
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -58,11 +75,28 @@ public class DialogSystem : MonoBehaviour
                 canMove = false;
                 if (!a)
                 {
+                    switch (Story.instantiate.cycle)
+                    {
+                        case 0:
+                            playerAnim.SetInteger("State", 1);
+                            DedAnim.SetInteger("State", 0);
+                            break;
+                        case 1:
+
+                            break;
+                        case 2:
+
+                            break;
+                        case 3:
+                            
+                            break;
+                    }
                     allStory[0].SetActive(true);
                 }
                 else if(a || Story.instantiate.rejection == 2)
                 {
                     unavailable[i].SetActive(true);
+                    a = true;
                 }
             }
         }
@@ -81,21 +115,51 @@ public class DialogSystem : MonoBehaviour
         ClearPanel();
         canMove = true;
         a = true;
+        if (i == 2 || i == 1)
+        {
+            DedAnim.SetInteger("State", 0);
+        }
+        if(i == 0 && a)
+        {
+            DedAnim.SetInteger("State", 3);
+        }
     }
 
     public void RejectionOption()
     {
+
         Story.instantiate.rejection += 1;
         ClearPanel();
-
+        DedAnim.SetInteger("State", 1);
         rejection[0].SetActive(true);
         i = 2;
     }
 
-    public void NextReplica()
+    public void NextReplica(int w)
     {
-        playerAnim.SetInteger("State", playerState);
-        DedAnim.SetInteger("State", playerState);
+        switch (w)
+        {
+            case 10:
+                playerAnim.SetInteger("State", 0);
+                break;
+            case 11:
+                playerAnim.SetInteger("State", 1);
+                break;
+            case 12:
+                playerAnim.SetInteger("State", 2);
+                break;
+            case 20:
+                DedAnim.SetInteger("State", 0);
+                break;
+            case 21:
+                DedAnim.SetInteger("State", 1);
+                break;
+            case 22:
+                DedAnim.SetInteger("State", 2);
+                break;
+            default:
+                break;
+        }
         a = true;
         ClearPanel();
         replica++;
@@ -146,7 +210,7 @@ public class DialogSystem : MonoBehaviour
                 Story.instantiate.fourthStory = true;
                 break;
         }
-        NextReplica();
+        NextReplica(0);
     }
 
     public void GoodOption()
@@ -155,7 +219,7 @@ public class DialogSystem : MonoBehaviour
         i = 0;
         ClearPanel();
 
-        NextReplica();
+        NextReplica(0);
     }
 
     public void BadOption()
@@ -164,7 +228,8 @@ public class DialogSystem : MonoBehaviour
 
         ClearPanel();
         i = 1;
-        dedsAnnoyedWords[i].SetActive(false);
+        dedsAnnoyedWords[0].SetActive(true);
+        DedAnim.SetInteger("State", 1);
     }
 
 }

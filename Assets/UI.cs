@@ -11,7 +11,7 @@ public class UI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        fuel.text = FuelStorage.instantiate.GetCountFuel().ToString();
+        fuel.text = FuelStorage.instantiate.GetItem().ToString();
         cycle.text = Story.instantiate.cycle.ToString();
     }
 }

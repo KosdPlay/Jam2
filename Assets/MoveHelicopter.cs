@@ -38,6 +38,7 @@ public class MoveHelicopter : MonoBehaviour
         canMove = true;
         instantiate = this;
         hp = maxhp;
+        canMove = LevelManager.instantiate.game;
     }
 
     private void FixedUpdate()
@@ -49,7 +50,7 @@ public class MoveHelicopter : MonoBehaviour
             Invoke("Spawn", speedA);
             Invoke("SpawnB", speedB);
             //hp += Time.deltaTime;
-
+            canMove = LevelManager.instantiate.game;
         }
         if (hp <= maxhp / 2)
         {
@@ -106,13 +107,13 @@ public class MoveHelicopter : MonoBehaviour
         animator.SetBool("At", true);
         if (!secondStage)
         {
-            Instantiate(tracePrefab, point0.position + new Vector3(0, -4.5f, 0), point0.transform.rotation);
+            Instantiate(tracePrefab, point0.position + new Vector3(0.2f, -4.5f, 0), point0.transform.rotation);
         }
         else
         {
-            Instantiate(tracePrefab, point0.position + new Vector3(0, -4.5f, 0), point0.transform.rotation);
-            Instantiate(tracePrefab, point1.position + new Vector3(-1, -4.5f, 0), point1.transform.rotation);
-            Instantiate(tracePrefab, point2.position + new Vector3(1, -4.5f, 0), point2.transform.rotation);
+            Instantiate(tracePrefab, point0.position + new Vector3(0.2f, -4.5f, 0), point0.transform.rotation);
+            Instantiate(tracePrefab, point1.position + new Vector3(-1f, -4.5f, 0), point1.transform.rotation);
+            Instantiate(tracePrefab, point2.position + new Vector3(1f, -4.5f, 0), point2.transform.rotation);
         }
         canMove = false;
         Invoke("SpawnTrace", 2f);
@@ -122,13 +123,13 @@ public class MoveHelicopter : MonoBehaviour
     {
         if (!secondStage)
         {
-            Instantiate(laserPrefab, point0.position + new Vector3(0, -4, 0), point0.transform.rotation);
+            Instantiate(laserPrefab, point0.position + new Vector3(0.2f, -3f, 0), point0.transform.rotation);
         }
         else
         {
-            Instantiate(laserPrefab, point0.position + new Vector3(0, -4.5f, 0), point0.transform.rotation);
-            Instantiate(laserPrefab, point1.position + new Vector3(-1, -4.5f, 0), point1.transform.rotation);
-            Instantiate(laserPrefab, point2.position + new Vector3(1, -4.5f, 0), point2.transform.rotation);
+            Instantiate(laserPrefab, point0.position + new Vector3(0.2f, -3f, 0), point0.transform.rotation);
+            Instantiate(laserPrefab, point1.position + new Vector3(-0.4f, -3.5f, 0), point1.transform.rotation);
+            Instantiate(laserPrefab, point2.position + new Vector3(0.7f, -3.9f, 0), point2.transform.rotation);
         }
         Invoke("Stop", 1);
     }
@@ -185,7 +186,7 @@ public class MoveHelicopter : MonoBehaviour
         if (Vector2.Distance(transform.position, point.position) <= 0.8f)
         {
             CutsceneManager.Instance.StartCutscene("CS_1"); StopCoroutine(MoveToSpawn());
-            Destroy(this.gameObject, 4);
+            Destroy(this.gameObject, 3.5f);
         }
     }
 }

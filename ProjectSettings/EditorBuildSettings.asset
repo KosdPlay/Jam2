@@ -5,14 +5,38 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9612e7a6dce823046ab97ca8afe00ac1
+  - enabled: 1
+    path: Assets/Scenes/Planet5A.unity
+    guid: 12c99cf146c4f6f45915b0fcd4700de3
+  - enabled: 1
+    path: Assets/Scenes/Planet5B.unity
+    guid: 44783a0815eae4c43bb6d9fdb3af2610
+  - enabled: 1
+    path: "Assets/Scenes/Planet5\u0421.unity"
+    guid: fafc3bafe6d508248a6b89b2a8f96415
+  - enabled: 1
+    path: Assets/Scenes/Planet1.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
     path: Assets/Scenes/Fight1.unity
     guid: 52004d6fe1bce9541a21be5b34c0e731
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/FightBoss.unity
     guid: c92c4fdfc27a97647ad4baccc62e0b86
+  - enabled: 1
+    path: Assets/Scenes/Fight2.unity
+    guid: 8a8765f0b0af90b469921cdce226843d
+  - enabled: 1
+    path: Assets/Scenes/Planet2.unity
+    guid: 828972d8aae0b8c498a78b6d6e260e17
+  - enabled: 1
+    path: Assets/Scenes/Planet3.unity
+    guid: 5204cbf3644c11b479dbff1816fd95bb
+  - enabled: 1
+    path: Assets/Scenes/Planet4.unity
+    guid: 57e7437f0199fa4478b0081305301e77
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

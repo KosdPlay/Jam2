@@ -9,6 +9,9 @@ public class FlightProgress : MonoBehaviour
     public float progress;
     [SerializeField] private Image progressBar;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip clip;
+
     [SerializeField] private float hp;
     [SerializeField] private float maxhp;
     public bool mod;
@@ -17,9 +20,13 @@ public class FlightProgress : MonoBehaviour
 
     public static FlightProgress instantiate;
 
-    private void Start()
+    private void Awake()
     {
         instantiate = this;
+    }
+
+    private void Start()
+    {
         hp = maxhp;
     }
 
@@ -27,7 +34,7 @@ public class FlightProgress : MonoBehaviour
     {
         if (!mod)
         {
-            progress += Time.deltaTime;
+            progress += Time.deltaTime * 3;
             progressBar.fillAmount = progress / 100;
         }
         else
@@ -38,6 +45,7 @@ public class FlightProgress : MonoBehaviour
 
     public void TakeDamage(int i)
     {
+        audioSource.PlayOneShot(clip);
         if (mod == false)
         {
             if (progress - i < 0)
@@ -46,7 +54,7 @@ public class FlightProgress : MonoBehaviour
             }
             else
             {
-                progress -= i;
+                progress -= i ;
             }
         }
         else

@@ -14,7 +14,7 @@ public class Story : MonoBehaviour
     public bool thirdStory;
     public bool fourthStory;
 
-    public float cycle;
+    public int cycle;
 
     private void Start()
     {
