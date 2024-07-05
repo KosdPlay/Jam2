@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class B : MonoBehaviour
 {
     [SerializeField] private GameObject hint;
+    public string name;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class B : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 Destroy(this.gameObject);
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene(name);
             }
         }
     }

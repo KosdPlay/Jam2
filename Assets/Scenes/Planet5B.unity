@@ -8697,6 +8697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint: {fileID: 6199898116762794752}
+  name: Menu
 --- !u!1 &1729885565
 GameObject:
   m_ObjectHideFlags: 0
