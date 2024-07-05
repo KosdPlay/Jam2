@@ -9,12 +9,16 @@ public class TextTypingEffect : MonoBehaviour
     public string fullText; // Полный текст, который нужно набрать   
     private float typingSpeed = 0.075f; // Скорость набора текста   
 
-    private string currentText = " "; // Текущий набираемый текст   
+    private string currentText; // Текущий набираемый текст   
     private bool isTyping = false; // Флаг, указывающий, идет ли в данный момент набор текста   
+
+    [SerializeField] private SkipTyping skipTyping;
+    [SerializeField] private FullText text;
 
     void OnEnable()
     {
         textComponent = GetComponent<TMP_Text>();
+        fullText = text.fullText;
         StartCoroutine(TypeText());
     }
 
@@ -35,7 +39,10 @@ public class TextTypingEffect : MonoBehaviour
         }
 
         isTyping = false;
+        skipTyping.Skip();
     }
+
+
 
     private void OnDisable()
     {

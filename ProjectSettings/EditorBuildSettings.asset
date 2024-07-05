@@ -38,5 +38,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Planet4.unity
     guid: 57e7437f0199fa4478b0081305301e77
+  - enabled: 0
+    path: Assets/Scenes/Menu  Test.unity
+    guid: 7c2c8febf97d6914dbccfd948f95e1fe
+  - enabled: 0
+    path: Assets/Scenes/Test.unity
+    guid: 4585b64e93ddd2c40abc988934c6fcd5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

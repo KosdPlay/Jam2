@@ -9,6 +9,8 @@ public class RotationPlanet : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float speed;
     public bool facingRight = true;
+    public bool last = false;
+    public Vector2 limit;
 
     private void Start()
     {
@@ -19,22 +21,46 @@ public class RotationPlanet : MonoBehaviour
     {
         if (DialogSystem.instantiate.canMove)
         {
-            if (Input.GetKey(KeyCode.D))
+            if (last)
             {
-                planet.transform.Rotate(0, 0, speed);
-                if (!facingRight)
+                Debug.Log(planet.transform.localRotation.z);
+                if (Input.GetKey(KeyCode.D) && planet.transform.localRotation.z < limit.y)
                 {
-                    Flip();
+                    planet.transform.Rotate(0, 0, speed);
+                    if (!facingRight)
+                    {
+                        Flip();
+                    }
+                }
+                if (Input.GetKey(KeyCode.A) && planet.transform.localRotation.z > limit.x)
+                {
+                    planet.transform.Rotate(0, 0, -speed);
+                    if (facingRight)
+                    {
+                        Flip();
+                    }
+
                 }
             }
-            if (Input.GetKey(KeyCode.A))
+            else
             {
-                planet.transform.Rotate(0, 0, -speed);
-                if (facingRight)
+                if (Input.GetKey(KeyCode.D))
                 {
-                    Flip();
-                } 
+                    planet.transform.Rotate(0, 0, speed);
+                    if (!facingRight)
+                    {
+                        Flip();
+                    }
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    planet.transform.Rotate(0, 0, -speed);
+                    if (facingRight)
+                    {
+                        Flip();
+                    }
 
+                }
             }
         }
     }

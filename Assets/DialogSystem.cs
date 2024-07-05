@@ -69,7 +69,7 @@ public class DialogSystem : MonoBehaviour
             {
                 hint.SetActive(false);
             }
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && canMove == true)
             {
                 hint.SetActive(false);
                 canMove = false;

@@ -29,6 +29,8 @@ public class UseRoket : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     Debug.Log("Типа взлетели");
+                    Dialogue.instantiate.CloseDialog();
+                    DialogSystem.instantiate.CloseDialog();
                     CutsceneManager.Instance.StartCutscene("CS_2");
                     DialogSystem.instantiate.canMove = false;
 

@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     string names = null;
     // Start is called before the first frame update
-    public void Start(string name)
+    public void StartCut(string name)
     {
         CutsceneManager.Instance.StartCutscene("CS");
         names = name;

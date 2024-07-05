@@ -20,5 +20,7 @@ public class Story : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         instantiate = this;
+        Application.targetFrameRate = 60;
+
     }
 }

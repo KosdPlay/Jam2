@@ -10,6 +10,13 @@ public class FindsLaika : MonoBehaviour
     private void Start()
     {
         hint.SetActive(false);
+        a = true;
+        Invoke("Active", 15);
+    }
+
+    private void Active()
+    {
+        a = false;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
